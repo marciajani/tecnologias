@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icon.png" style="filter: invert();" type="image/x-icon"><title>Solução tecnologias - Home</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="style/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap-grid.min.css">
+    
+</head>
+<body>
+    
+    <h1 id="title" style="text-align: center;">Solução <span id="aaaa">tecnologias</span></h1>
+    <div class="container text-center" style="margin-top: 20px;">
+        <div class="row">
+          <div class="col">
+            <fieldset id="field-1">
+                <img src="assets/restore_icon.jpg" width="70px" style="margin-left: 130px;">
+                <h1 id="title" style="color: black; font-size: 1.2pc; margin-left: 30px;" >Restauração de computadores</h1>
+                <div class="card" style="width: 18rem;">
+                    <img id="img-1" src="assets/pcs.jpg" width="300px">
+                    <div class="card-body">
+                      <p class="card-text" style="margin-left: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">A Solução Tecnologias oferece um serviço de formatação (Restauração) de computadores no caso de lentidão ou malwares no dispositivo.</p>
+                      <input id="button" type="button" value="  Saiba Mais  ">
+                      <br>
+                      <br>
+                    </div>
+                  </div>
+                  
+            </fieldset>
+            <br>
+            <br>
+          </div>
+          <div class="col">
+            <fieldset id="field-2">
+                <img src="assets/icon.png" width="70px" style="margin-left: 130px;">
+                <h1 id="title" style="color: black; font-size: 1.2pc; margin-left: 40px;" >Montagem de computadores</h1>
+                <div class="card" style="width: 18rem;">
+                    <img id="img-1" src="assets/hardware.jpg" width="300px" height="190px">
+                    <div class="card-body">
+                      <p class="card-text" style="margin-left: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">A Solução Tecnologias também oferece um serviço de montagem de computadores para os clientes.</p>
+                      <input id="button" type="button" value="  Saiba Mais  ">
+                      <br>
+                      <br>
+                    </div>
+                  </div>
+            </fieldset>
+            <br>
+            <br>
+          </div>
+          <div class="col">
+            <fieldset id="field-3">
+                <img src="assets/manutencao-logo.jpg" width="70px" style="margin-left: 130px;">
+                <h1 id="title" style="color: black; font-size: 1.2pc; margin-left: 40px;" >Manutenção de aparelhos</h1>
+                <div class="card" style="width: 18rem;">
+                    <img id="img-1" src="assets/celular.jpg" width="300px" height="170px">
+                    <div class="card-body">
+                      <p class="card-text" style="margin-left: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Um serviço de manutenção também é oferecido para clientes com problemas no funcionamento de seus de dispositivos ou aparelhos</p>
+                      <input id="button" type="button" value="  Saiba Mais  ">
+                      <br>
+                      <br>
+                    </div>
+                  </div>
+            </fieldset>
+          </div>
+        </div>
+    </div>
+
+    <script>
+        var title = document.getElementById("aaaa")
+var r = 255
+var g = 255
+const color = setInterval(changecolor, 10)
+
+function changecolor(){
+    title.style.color = `rgb(${r}, ${g}, 255)`
+
+    console.log(r);
+    console.log(g);
+
+    if(r <= 255 && r > 0){r--}
+    else{r = 255}
+
+    if(g <= 255 && g > 0){g--}
+    else{g = 255}
+    
+}
+    </script>
+</body>
+</html>
